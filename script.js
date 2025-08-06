@@ -1,3 +1,4 @@
+Main file containing all the contents
 const form = document.getElementById('contactForm');
 const submitBtn = document.getElementById('submitBtn');
 const successMessage = document.getElementById('successMessage');
