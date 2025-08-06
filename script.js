@@ -1,4 +1,4 @@
-const form = document.getElementById('contactForm');
+Main file containing all the contentsconst form = document.getElementById('contactForm');
 const submitBtn = document.getElementById('submitBtn');
 const successMessage = document.getElementById('successMessage');
 const messageTextarea = document.getElementById('message');
