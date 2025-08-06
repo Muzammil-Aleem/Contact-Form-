@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Form</title>
+  <link rel="stylesheet" href="./style.css"/>
+</head>
+<body>
+  <div class="form-container">
+    <h1 class="form-title">Contact Us</h1>
+    <p class="form-subtitle">We'd love to hear from you. Send us your queries or feedback!</p>
+
+    <div class="success-message" id="successMessage" style="display: none;">
+      ✅ Message sent successfully. Thank you!
+    </div>
+
+    <form id="contactForm" action="https://formspree.io/f/mvgqwrwz" method="POST" novalidate>
+      <div class="form-group">
+        <label for="fullName">Full Name</label>
+        <input type="text" id="fullName" name="fullName" required />
+        <div class="error-message" id="fullNameError">⚠️ Enter your full name</div>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" required />
+        <div class="error-message" id="emailError">⚠️ Enter a valid email address</div>
+      </div>
+
+      <div class="form-group">
+        <label for="subject">Subject</label>
+        <input type="text" id="subject" name="subject" required />
+        <div class="error-message" id="subjectError">⚠️ Enter a subject</div>
+      </div>
+
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Your message..." required maxlength="1000"></textarea>
+        <div class="char-counter"><span id="charCount">0</span>/1000 characters</div>
+        <div class="error-message" id="messageError">⚠️ Enter your message</div>
+      </div>
+
+      <button type="submit" class="submit-btn" id="submitBtn">Submit</button>
+    </form>
+  </div>
+  <script src="./script.js"></script>
+</body>
+</html>
